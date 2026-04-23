@@ -284,7 +284,7 @@ export const navBarConfig: NavBarConfig = {
 				},
 				{
 					name: "Bilibili",
-					url: "https://space.bilibili.com/",
+					url: "https://www.bilibili.com/",
 					external: true,
 					icon: "fa7-brands:bilibili",
 				},
@@ -453,10 +453,10 @@ export const commentConfig: CommentConfig = {
 		lang: SITE_LANG,
 	},
 	giscus: {
-		repo: "your-github-username/your-repo-name",
-		repoId: "your-repo-id",
+		repo: "zhengquanstudio/mizuki-blog-giscus-comments",
+		repoId: "R_kgDOSKrqyg",
 		category: "Announcements",
-		categoryId: "your-category-id",
+		categoryId: "DIC_kwDOSKrqys4C7h8g",
 		mapping: "pathname",
 		strict: "0",
 		reactionsEnabled: "1",
