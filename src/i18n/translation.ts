@@ -10,7 +10,7 @@ export type Translation = Record<I18nKey, string>;
 const defaultTranslation = en;
 
 const map: Record<string, Translation> = {
-	en: en,
+	//en: en,
 	//en_us: en,
 	//en_gb: en,
 	//en_au: en,
