@@ -18,7 +18,6 @@
 } from "./types/config";
 import { LinkPreset } from "./types/config";
 
-// 移除i18n导入以避免循环依赖
 
 // 定义站点语言
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
@@ -57,9 +56,9 @@ export const siteConfig: SiteConfig = {
 		// 顶栏标题文本
 		text: "郑全散记のBlog",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
-		icon: "assets/home/home.webp",
+		icon: "/assets/home/home.webp",
 		// 网站Logo图片路径
-		logo: "assets/home/default-logo.webp",
+		logo: "/assets/home/default-logo.webp",
 	},
 
 	// 页面自动缩放配置
