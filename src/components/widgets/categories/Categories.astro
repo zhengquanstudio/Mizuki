@@ -1,48 +1,81 @@
 ---
-import I18nKey from "../../../i18n/i18nKey";
-import { i18n } from "../../../i18n/translation";
-import { getCategoryList } from "../../../utils/content-utils";
-import { widgetManager } from "../../../utils/widget-manager";
-import ButtonLink from "../../control/ButtonLink.astro";
-import WidgetLayout from "../common/WidgetLayout.astro";
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 
-const categories = await getCategoryList();
+// 1. 新增：英文分类 → 中文映射（核心修改）
+const cnCategoryMap = {
+  "tech": "技术",
+  "game": "游戏",
+  "smart": "智能",
+  "Guides": "指南",
+  "Examples": "示例",
+  "uncategorized": "未分类"
+};
 
-const COLLAPSED_HEIGHT = "7.5rem";
+// 2. 原有逻辑：获取文章并统计分类
+const posts = await getCollection('posts');
+const categoryMap = new Map<string, number>();
 
-// 使用统一的组件管理器检查是否应该折叠
-const categoriesComponent = widgetManager
-	.getConfig()
-	.properties.find((p) => p.type === "categories");
-const isCollapsed = categoriesComponent
-	? widgetManager.isCollapsed(categoriesComponent, categories.length)
-	: false;
+posts.forEach((post: CollectionEntry<'posts'>) => {
+  const category = post.data.category || 'uncategorized';
+  categoryMap.set(category, (categoryMap.get(category) || 0) + 1);
+});
 
-interface Props {
-	class?: string;
-	style?: string;
-}
-const className = Astro.props.class;
-const style = Astro.props.style;
+// 3. 新增：转换为带中文名称的分类列表
+const categories = Array.from(categoryMap.entries()).sort((a, b) => b[1] - a[1]).map(([enName, count]) => ({
+  enName,
+  cnName: cnCategoryMap[enName] || enName, // 优先显示中文，无映射则显示原名称
+  count
+}));
 ---
 
-<WidgetLayout
-	name={i18n(I18nKey.categories)}
-	id="categories"
-	isCollapsed={isCollapsed}
-	collapsedHeight={COLLAPSED_HEIGHT}
-	class={className}
-	style={style}
->
-	{
-		categories.map((c) => (
-			<ButtonLink
-				url={c.url}
-				badge={String(c.count)}
-				label={`View all posts in the ${c.name.trim()} category`}
-			>
-				{c.name.trim()}
-			</ButtonLink>
-		))
-	}
-</WidgetLayout>
+<!-- 4. 修改渲染部分：显示中文，链接保留英文 -->
+<div class="widget-category">
+  <h3 class="widget-title">分类</h3>
+  <ul class="category-list">
+    {categories.map(({ enName, cnName, count }) => (
+      <li key={enName} class="category-item">
+        <a href={`/category/${enName}`} class="category-link">
+          {cnName} <span class="category-count">({count})</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</div>
+
+<!-- 保留原有样式（无需修改） -->
+<style>
+  .widget-category {
+    padding: 1rem;
+    border-radius: 8px;
+    background: var(--card-bg);
+  }
+  .widget-title {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .category-item {
+    margin: 0.5rem 0;
+  }
+  .category-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .category-link:hover {
+    color: var(--primary-color);
+  }
+  .category-count {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+  }
+</style>
