@@ -21,7 +21,7 @@ const localAnimeList: AnimeItem[] = [
 		title: "Lycoris Recoil",
 		status: "completed",
 		rating: 9.8,
-		cover: "/assets/anime/lkls.webp",
+		cover: "/images/anime/lkls.webp",
 		description: "Girl's gunfight",
 		episodes: "12 episodes",
 		year: "2022",

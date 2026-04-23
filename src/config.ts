@@ -56,9 +56,9 @@ export const siteConfig: SiteConfig = {
 		// 顶栏标题文本
 		text: "郑全散记のBlog",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
-		icon: "/assets/home/home.webp",
+		icon: "/images/home/home.webp",
 		// 网站Logo图片路径
-		logo: "/assets/home/default-logo.webp",
+		logo: "/images/home/default-logo.webp",
 	},
 
 	// 页面自动缩放配置
@@ -124,16 +124,16 @@ export const siteConfig: SiteConfig = {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
 			desktop: [
-				"/assets/desktop-banner/1.webp",
-				"/assets/desktop-banner/2.webp",
-				"/assets/desktop-banner/3.webp",
-				"/assets/desktop-banner/4.webp",
+				"/images/desktop-banner/1.webp",
+				"/images/desktop-banner/2.webp",
+				"/images/desktop-banner/3.webp",
+				"/images/desktop-banner/4.webp",
 			], // 桌面横幅图片
 			mobile: [
-				"/assets/mobile-banner/1.webp",
-				"/assets/mobile-banner/2.webp",
-				"/assets/mobile-banner/3.webp",
-				"/assets/mobile-banner/4.webp",
+				"/images/mobile-banner/1.webp",
+				"/images/mobile-banner/2.webp",
+				"/images/mobile-banner/3.webp",
+				"/images/mobile-banner/4.webp",
 			], // 移动横幅图片
 		}, // 使用本地横幅图片
 
@@ -203,7 +203,7 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// 留空以使用默认 favicon
 		 {
-		   src: '/favicon/icon.png',    // 图标文件路径
+		   src: '/images/favicon/icon.png',    // 图标文件路径
 		   theme: 'light',              // 可选，指定主题 'light' | 'dark'
 		   sizes: '32x32',              // 可选，图标大小
 		 }
@@ -244,16 +244,16 @@ export const siteConfig: SiteConfig = {
 export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	src: {
 		desktop: [
-			"/assets/desktop-banner/1.webp",
-			"/assets/desktop-banner/2.webp",
-			"/assets/desktop-banner/3.webp",
-			"/assets/desktop-banner/4.webp",
+			"/images/desktop-banner/1.webp",
+			"/images/desktop-banner/2.webp",
+			"/images/desktop-banner/3.webp",
+			"/images/desktop-banner/4.webp",
 		], // 桌面横幅图片
 		mobile: [
-			"/assets/mobile-banner/1.webp",
-			"/assets/mobile-banner/2.webp",
-			"/assets/mobile-banner/3.webp",
-			"/assets/mobile-banner/4.webp",
+			"/images/mobile-banner/1.webp",
+			"/images/mobile-banner/2.webp",
+			"/images/mobile-banner/3.webp",
+			"/images/mobile-banner/4.webp",
 		], // 移动横幅图片
 	}, // 使用本地横幅图片
 	position: "center", // 壁纸位置，等同于 object-position
@@ -367,7 +367,7 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	avatar: "/images/avatar/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "郑全散记のBLOG",
 	bio: "我哒哒的马蹄是个美丽的错误，我只是过客，不是归人。",
 	typewriter: {
