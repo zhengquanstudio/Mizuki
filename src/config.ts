@@ -27,7 +27,7 @@ export const siteConfig: SiteConfig = {
 	title: "郑全散记のBLOG",
 	subtitle: "zheng quan blog",
 	siteURL: "https://www.zhengquan.org/", // 请替换为你的站点URL，以斜杠结尾
-	siteStartDate: "2026-04-22", // 站点开始运行日期，用于站点统计组件计算运行天数
+	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
 
@@ -55,7 +55,7 @@ export const siteConfig: SiteConfig = {
 		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
 		mode: "text-icon",
 		// 顶栏标题文本
-		text: "MizukiUI",
+		text: "郑全散记のBlog",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
 		icon: "assets/home/home.webp",
 		// 网站Logo图片路径
@@ -164,12 +164,12 @@ export const siteConfig: SiteConfig = {
 			enable: true, // 在主页显示自定义文本
 			title: "郑全散记のBLOG", // 主页横幅主标题
 
-			subtitle: [			
-				"虽然没有什么特别的事，但有你在就足够了",
-				"现在你依然是我的光",
-				"你啊，不知不觉就成为了我的每一天",
-				"和你说话时，每天都会变得有点快乐",
-				"今天是没什么特别的日子。但，只是稍微好一点的日子",
+			subtitle: [
+				"春有百花秋有月，夏有凉风冬有雪。若无闲事挂心头，便是人间好时节。",
+				"快乐很简单，就是春天的鲜花，夏天的绿荫，秋天的野果，冬天的漫天飞雪。",
+				"往事不必再提，人生已多风雨，我只愿风止于秋水，而我止于你。",
+				"回想春天里的相遇，仿佛美好而忧伤的画面从脑海中悠悠浮现。",
+				"人生有很多的转折，每一个时段有每一个时段的颜色。",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -370,7 +370,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "郑全散记のBLOG",
-	bio: "往事不必再提，人生已多风雨，我只愿风止于秋水，而我止于你。",
+	bio: "我哒哒的马蹄是个美丽的错误，我只是过客，不是归人。",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
@@ -474,8 +474,8 @@ export const shareConfig: ShareConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "欢迎访问我的博客", // 公告内容
+	title: "公告", // 公告标题，填空使用i18n字符串Key.announcement
+	content: "滚滚红尘，陌上寒烟。前世的缘，今生相见。", // 公告内容
 	closable: false, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -640,7 +640,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 };
 
 export const sakuraConfig: SakuraConfig = {
-	enable: false, // 默认关闭樱花特效
+	enable: true, // 默认关闭樱花特效
 	sakuraNum: 21, // 樱花数量
 	limitTimes: -1, // 樱花越界限制次数，-1为无限循环
 	size: {
@@ -676,7 +676,7 @@ export const pioConfig: import("./types/config").PioConfig = {
 	mode: "draggable", // 默认为可拖拽模式
 	hiddenOnMobile: true, // 默认在移动设备上隐藏
 	dialog: {
-		welcome: "Welcome to zhengquan's blog!", // 欢迎词
+		welcome: "Welcome to Mizuki Website!", // 欢迎词
 		touch: [
 			"What are you doing?",
 			"Stop touching me!",

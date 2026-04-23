@@ -1,8 +1,8 @@
 ---
-title: 游戏文章范例
+title: Draft Example
 published: 2022-07-01
 tags: [Markdown, Blogging, Demo]
-category: 'games'
+category: Examples
 draft: true
 ---
 

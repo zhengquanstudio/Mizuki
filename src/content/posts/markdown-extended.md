@@ -1,11 +1,11 @@
 ---
-title: Markdown科技拓展功能
+title: Markdown Extended Features
 published: 2024-05-01
 updated: 2024-11-29
 description: 'Read more about Markdown features in Mizuki'
 image: ''
 tags: [Demo, Example, Markdown, Mizuki]
-category: 'tech'
+category: 'Examples'
 draft: false 
 ---
 
