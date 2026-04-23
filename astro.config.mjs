@@ -35,7 +35,10 @@ import { remarkMermaid } from "./src/plugins/remark-mermaid.js";
 export default defineConfig({
 	site: siteConfig.siteURL,
 	base: "/",
-	trailingSlash: "always",
+	trailingSlash: "never",
+    build: {
+      format: 'file'
+     }
 	output: "static",
 	integrations: [
 		oddmisc({
