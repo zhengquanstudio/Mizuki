@@ -6,18 +6,19 @@ updated: 2026-04-24T21:13:00
 description: ""
 tags: ["技术", "生活", "随笔"]
 category: 技术
-cover: "/images/covers/hello.png"
+image: "/images/postimages/hello.png"
 sticky: false
 ---
 
 ---
 
 
-### 我的博客搭建完成啦！
 
-### 这是我的第一篇博客文章！
+我的博客搭建完成啦！
 
-#### 博客是由Astro系统，一个集多功能于一体的 Web 框架系统，Mizuki主题，GitHub托管，cloudflare部署的个人博客系统。
+这是我的第一篇博客文章！
+
+博客是由Astro系统，一个集多功能于一体的 Web 框架系统，Mizuki主题，GitHub托管，cloudflare部署的个人博客系统。
 
 
 
