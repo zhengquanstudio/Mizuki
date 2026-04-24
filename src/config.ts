@@ -372,7 +372,7 @@ export const profileConfig: ProfileConfig = {
 	bio: "我哒哒的马蹄是个美丽的错误，我只是过客，不是归人。",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
-		speed: 80, // 打字速度（毫秒）
+		speed: 120, // 打字速度（毫秒）
 	},
 	links: [
 //		{
@@ -434,7 +434,7 @@ export const permalinkConfig: PermalinkConfig = {
 	 *
 	 * 注意：支持使用斜杠 "/" 构建嵌套路径。
 	 */
-	format: "%category%/%postname%", // 默认使用文件名
+	format: "/%postname%", // 默认使用文件名
 };
 
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
@@ -474,7 +474,7 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "公告", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "滚滚红尘，陌上寒烟。前世的缘，今生相见。", // 公告内容
+	content: "滚滚红尘，陌上寒烟。前世的缘，今生相见。", // 公告内容	
 	closable: false, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接

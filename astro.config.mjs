@@ -35,9 +35,7 @@ export default defineConfig({
 	site: siteConfig.siteURL,
 	base: "/",
 	trailingSlash: "always",
-
 	output: "static",
-
 	integrations: [
 		umami({
 			shareUrl: false,

@@ -1,49 +1,53 @@
-
-This website is built with the **Astro** framework using the [Mizuki](https://github.com/matsuzaka-yuki/mizuki) theme.
-
-::github{repo="matsuzaka-yuki/Mizuki"}
-
-## 🌟 Theme Features
-
-### 🎨 Design & User Experience
-- **Modern & Elegant Design** - Clean, minimalist interface with beautiful typography
-- **Fully Responsive** - Optimized for all devices from mobile to desktop
-- **Dark/Light Mode** - Automatic theme switching with smooth transitions
-- **Beautiful Typography** - Enhanced readability with JetBrains Mono font
-- **Smooth Animations** - Fluid page transitions and interactive elements
-
-### 🔍 Content & Search
-- **Advanced Search** - Powered by [Pagefind](https://pagefind.app/) for fast, accurate results
-- **Enhanced Markdown** - Extended syntax with code highlighting and math support
-- **Interactive Table of Contents** - Auto-scroll navigation for long articles
-- **RSS Feed Generation** - Stay updated with automatic feed generation
-- **Reading Time Estimation** - Know how long articles take to read
-- **Post Categorization** - Organize content with tags and categories
-
-
-
-### 📱 Special Pages
-- **Anime Tracking Page** - Track your anime watching progress with ratings
-- **Friends Links Page** - Showcase friend websites with beautiful cards
-- **Diary/Moments Page** - Share life moments like social media posts
-- **Archive Page** - Organized timeline view of all posts
-- **About Page** - Customizable personal introduction (this page!)
-
-### 🛠 Technical Features
-- **Enhanced Code Blocks** - Powered by [Expressive Code](https://expressive-code.com/)
-- **Math Support** - LaTeX rendering with KaTeX for mathematical expressions
-- **Image Optimization** - PhotoSwipe gallery with lazy loading
-- **SEO Optimized** - Built-in sitemap and meta tags for better search visibility
-- **Performance Optimized** - Fast loading with caching and optimization
-- **Comment System Ready** - Integration support for Twikoo comments
-
-### 🎯 Advanced Markdown Features
-- **Callouts & Admonitions** - Beautiful info boxes with `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`
-- **Mathematical Equations** - Write LaTeX math with `$inline$` and `$$block$$` syntax
-- **GitHub Cards** - Embed repository cards with `::github{repo="user/repo"}`
-- **Syntax Highlighting** - Advanced code highlighting with line numbers
-- **Copy Code Buttons** - Easy code copying functionality
+<div style="text-align:center;line-height:2.4;letter-spacing:1.5px;margin:2rem 0;color:#555;"> <h2 style="font-weight:500;margin-bottom:5px;">将进酒</h2> <p style="font-size:14px;margin-bottom:20px;">唐·李白</p>  <p>君不见黄河之水天上来，奔流到海不复回。</p> <p>君不见高堂明镜悲白发，朝如青丝暮成雪。</p> <p>人生得意须尽欢，莫使金樽空对月。</p> <p>天生我材必有用，千金散尽还复来。</p> <p>烹羊宰牛且为乐，会须一饮三百杯。</p> <p>岑夫子，丹丘生，将进酒，杯莫停。</p> <p>与君歌一曲，请君为我倾耳听。</p> <p>钟鼓馔玉不足贵，但愿长醉不愿醒。</p> <p>古来圣贤皆寂寞，惟有饮者留其名。</p> <p>陈王昔时宴平乐，斗酒十千恣欢谑。</p> <p>主人何为言少钱，径须沽取对君酌。</p> <p>五花马、千金裘，呼儿将出换美酒，与尔同销万古愁。</p> </div> 
 
 ---
 
-*Built with ❤️ using Astro and inspired by modern web design principles.*
+##   写在前面
+
+   本站基于 Astro 开源框架搭建，使用前端大佬松坂有希提供的 Mizuki 主题模板。 
+
+- Astro：[Astro 官方](https://astro.build) 
+
+- Mizuki主题：https://github.com/LyraVoid/Mizuki.git 
+
+- FlowWing仓库：https://github.com/zhengquanstudio/FlowWing
+
+- 本站：https://www.zhengquan.org
+
+## 关于自己 
+
+学的软件开发，但是从来没有在软件公司写过一行代码。 
+
+出门在外，身份是自己给的(～o￣3￣)～
+
+- 🎂 生日：0116 
+- ⚖️ 星座： 
+- 👽 外号： 
+- 💬 QQ：398060918 
+- 📝 个人博客：https://www.zhengquan.org
+
+## 主线任务 
+
+- 💻 技术水平：熟悉各种软件的安装与卸载。 
+
+- 😅 日常状态：不是在发呆，就是在发呆的路上。
+
+- 🤔 哲学思考：早上吃什么，中午吃什么，晚上吃什么；为了省钱，优先凑合午晚饭。
+
+### 兴趣爱好 
+
+- 🎮 游戏日常：Steam、极品飞车、荒野大镖客、荒野猎人...游戏很多，喜加一就是玩过。 
+
+- 🎵 喜欢歌手：周杰伦、王力宏、李健、水木年华、伍佰。  年岁渐长，愈发偏爱老歌。 
+
+- 📺 番剧影视：许久未曾追剧看番，中年日常，时间与金钱皆有限。
+
+- 🌟 闲散爱好：睡觉、刷手机，低成本自娱自乐。
+
+---
+
+## 关于这个博客
+
+​    内容不定期更新发布，依托 GitHub 与cloudflare免费服务部署。 仅域名每年续费，没有额外开销，安静记录生活与技术碎片。
+
+​    这里是属于我的小天地，记录日常、分享技术、收藏生活。
