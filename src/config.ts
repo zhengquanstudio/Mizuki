@@ -24,9 +24,9 @@ import { LinkPreset } from "./types/config";
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 const SITE_TIMEZONE = 8; //设置你的网站时区 from -12 to 12 default in UTC+8
 export const siteConfig: SiteConfig = {
-	title: "Mizuki",
-	subtitle: "One demo website",
-	siteURL: "https://mizuki.mysqil.com/", // 请替换为你的站点URL，以斜杠结尾
+	title: "郑全散记のBLOG",
+	subtitle: "zheng quan's blog",
+	siteURL: "https://www.zhengquan.org/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2025-01-01", // 站点开始运行日期，用于站点统计组件计算运行天数
 
 	timeZone: SITE_TIMEZONE,
@@ -55,7 +55,7 @@ export const siteConfig: SiteConfig = {
 		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
 		mode: "text-icon",
 		// 顶栏标题文本
-		text: "MizukiUI",
+		text: "郑全散记のBLOG",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
 		icon: "assets/home/home.webp",
 		// 网站Logo图片路径
@@ -162,14 +162,14 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true, // 在主页显示自定义文本
-			title: "わたしの部屋", // 主页横幅主标题
+			title: "郑全散记のBLOG", // 主页横幅主标题
 
 			subtitle: [
-				"特別なことはないけど、君がいると十分です",
-				"今でもあなたは私の光",
-				"君ってさ、知らないうちに私の毎日になってたよ",
-				"君と話すと、なんか毎日がちょっと楽しくなるんだ",
-				"今日はなんでもない日。でも、ちょっとだけいい日",
+				"春有百花秋有月，夏有凉风冬有雪。若无闲事挂心头，便是人间好时节。",
+				"快乐很简单，就是春天的鲜花，夏天的绿荫，秋天的野果，冬天的漫天飞雪。",
+				"往事不必再提，人生已多风雨，我只愿风止于秋水，而我止于你。",
+				"回想春天里的相遇，仿佛美好而忧伤的画面从脑海中悠悠浮现。",
+				"人生有很多的转折，每一个时段有每一个时段的颜色。",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果
@@ -273,52 +273,52 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		// 支持自定义导航栏链接，支持多级菜单
 		{
-			name: "Links",
+			name: "链接",
 			url: "/links/",
 			icon: "material-symbols:link",
 			children: [
 				{
 					name: "GitHub",
-					url: "https://github.com/LyraVoid/Mizuki",
+					url: "https://github.com/zhengquanstudio/FlowWing",
 					external: true,
 					icon: "fa7-brands:github",
 				},
 				{
 					name: "Bilibili",
-					url: "https://space.bilibili.com/701864046",
+					url: "https://www.bilibili.com/",
 					external: true,
 					icon: "fa7-brands:bilibili",
 				},
 				{
 					name: "Gitee",
-					url: "https://gitee.com/matsuzakayuki/Mizuki",
+					url: "https://gitee.com/langyaquanzi/",
 					external: true,
 					icon: "mdi:git",
 				},
 			],
 		},
 		{
-			name: "My",
+			name: "我的",
 			url: "/content/",
 			icon: "material-symbols:person",
 			children: [
 				{
-					name: "Anime",
+					name: "追番",
 					url: "/anime/",
 					icon: "material-symbols:movie",
 				},
 				{
-					name: "Diary",
+					name: "日记",
 					url: "/diary/",
 					icon: "material-symbols:book",
 				},
 				{
-					name: "Gallery",
+					name: "相册",
 					url: "/albums/",
 					icon: "material-symbols:photo-library",
 				},
 				{
-					name: "Devices",
+					name: "设备",
 					url: "/devices/",
 					icon: "material-symbols:devices",
 					external: false,
@@ -326,39 +326,39 @@ export const navBarConfig: NavBarConfig = {
 			],
 		},
 		{
-			name: "About",
+			name: "关于",
 			url: "/content/",
 			icon: "material-symbols:info",
 			children: [
 				{
-					name: "About",
+					name: "关于",
 					url: "/about/",
 					icon: "material-symbols:person",
 				},
 				{
-					name: "Friends",
+					name: "友链",
 					url: "/friends/",
 					icon: "material-symbols:group",
 				},
 			],
 		},
 		{
-			name: "Others",
+			name: "其他",
 			url: "#",
 			icon: "material-symbols:more-horiz",
 			children: [
 				{
-					name: "Projects",
+					name: "项目",
 					url: "/projects/",
 					icon: "material-symbols:work",
 				},
 				{
-					name: "Skills",
+					name: "技能",
 					url: "/skills/",
 					icon: "material-symbols:psychology",
 				},
 				{
-					name: "Timeline",
+					name: "时间线",
 					url: "/timeline/",
 					icon: "material-symbols:timeline",
 				},
@@ -369,27 +369,27 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "まつざか ゆき",
-	bio: "世界は大きい、君は行かなければならない",
+	name: "郑全散记のBLOG",
+	bio: "我哒哒的马蹄是个美丽的错误，我只是过客，不是归人。",
 	typewriter: {
 		enable: true, // 启用个人简介打字机效果
 		speed: 80, // 打字速度（毫秒）
 	},
 	links: [
-		{
-			name: "Bilibili",
-			icon: "fa7-brands:bilibili",
-			url: "https://space.bilibili.com/701864046",
-		},
+//		{
+//			name: "Bilibili",
+//			icon: "fa7-brands:bilibili",
+//			url: "https://space.bilibili.com/701864046",
+//		},
 		{
 			name: "Gitee",
 			icon: "mdi:git",
-			url: "https://gitee.com/matsuzakayuki",
+			url: "https://gitee.com/langyaquanzi",
 		},
 		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
-			url: "https://github.com/matsuzaka-yuki",
+			url: "https://github.com/zhengquanstudio/Mizuki",
 		},
 		{
 			name: "Codeberg",
@@ -399,7 +399,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Discord",
 			icon: "fa7-brands:discord",
-			url: "https://discord.gg/MqW6TcQtVM",
+			url: "https://discord.gg/",
 		},
 	],
 };
@@ -412,7 +412,7 @@ export const licenseConfig: LicenseConfig = {
 
 // Permalink 固定链接配置
 export const permalinkConfig: PermalinkConfig = {
-	enable: false, // 是否启用全局 permalink 功能，关闭时使用默认的文件名作为链接
+	enable: true, // 是否启用全局 permalink 功能，关闭时使用默认的文件名作为链接
 	/**
 	 * permalink 格式模板
 	 * 支持的占位符：
@@ -435,7 +435,7 @@ export const permalinkConfig: PermalinkConfig = {
 	 *
 	 * 注意：支持使用斜杠 "/" 构建嵌套路径。
 	 */
-	format: "%postname%", // 默认使用文件名
+	format: "%category%/%postname%", // 默认使用文件名
 };
 
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
@@ -447,17 +447,17 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 };
 
 export const commentConfig: CommentConfig = {
-	enable: false, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
-	system: "twikoo", // 评论系统选择: "twikoo" | "giscus"
+	enable: true, // 启用评论功能。当设置为 false 时，评论组件将不会显示在文章区域。
+	system: "giscus", // 评论系统选择: "twikoo" | "giscus"
 	twikoo: {
 		envId: "https://twikoo.vercel.app",
 		lang: SITE_LANG,
 	},
 	giscus: {
-		repo: "your-github-username/your-repo-name",
-		repoId: "your-repo-id",
+		repo: "zhengquanstudio/FlowWing-blog-giscus-comments",
+		repoId: "R_kgDOSKrqyg",
 		category: "Announcements",
-		categoryId: "your-category-id",
+		categoryId: "DIC_kwDOSKrqys4C7h8g",
 		mapping: "pathname",
 		strict: "0",
 		reactionsEnabled: "1",
@@ -474,9 +474,9 @@ export const shareConfig: ShareConfig = {
 };
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "ブログへようこそ！これはサンプルの告知です", // 公告内容
-	closable: true, // 允许用户关闭公告
+	title: "公告", // 公告标题，填空使用i18n字符串Key.announcement
+	content: "滚滚红尘，陌上寒烟。前世的缘，今生相见。", // 公告内容
+	closable: false, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
 		text: "Learn More", // 链接文本
@@ -498,7 +498,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 };
 
 export const footerConfig: FooterConfig = {
-	enable: false, // 是否启用Footer HTML注入功能
+	enable: true, // 是否启用Footer HTML注入功能
 	customHtml: "", // HTML格式的自定义页脚信息，例如备案号等，默认留空
 	// 也可以直接编辑 FooterConfig.html 文件来添加备案号等自定义内容
 	// 注意：若 customHtml 不为空，则使用 customHtml 中的内容；若 customHtml 留空，则使用 FooterConfig.html 文件中的内容
@@ -638,9 +638,9 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 		},
 	},
 };
-
+// 樱花飘落配置
 export const sakuraConfig: SakuraConfig = {
-	enable: false, // 默认关闭樱花特效
+	enable: true, // 默认关闭樱花特效
 	sakuraNum: 21, // 樱花数量
 	limitTimes: -1, // 樱花越界限制次数，-1为无限循环
 	size: {
